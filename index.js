@@ -1,6 +1,8 @@
 let main_elem = document.getElementById('main')
 let more = document.getElementById('more')
 let skills = document.getElementById('skills')
+let body = document.getElementsByTagName('body')
+let html = document.getElementsByTagName('html')
 
 let welcome_text_1_elem = document.getElementById('welcome-message-1'); let welcome_text_1 = 'Person:  '
 let welcome_text_2_elem = document.getElementById('welcome-message-2'); let welcome_text_2 = '⠀⠀initialize(self):'
@@ -45,18 +47,20 @@ function typing_animation(elem, text, interval, end, input, type) {
 more.onclick = function () {
     if (more.innerHTML == './more') {
         more.innerHTML = './less'
+        body.overflow = 'auto'
         main_elem.style.opacity = 1;
         main_elem.style.transition = '0.1s ease-in'
         animate_skill()
     } else {
         more.innerHTML = './more'
+        body.overflow = 'hidden'
         main_elem.style.opacity = 0;
         main_elem.style.transition = '0.1s ease-in'
     }
 }
 
 function animate_skill() {
-    const skills = [15, 14, 12, 11, 10]
+    const skills = [15, 14, 15, 12, 11, 4]
 
     const langs = document.getElementsByClassName('box-progress')
     var i
