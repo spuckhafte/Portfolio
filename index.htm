@@ -7,14 +7,41 @@
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="index.css">
 
         <title>Rakshit</title>
     </head>
 
-    <body class="bg-warning">
-        <h1 class="display-1" id='welcome-message'>~</h1>
-        <h1 class='display-3' id='about-me' style="display: none;">I like to code...</h1>
+    <body>
+        <div id="welcome">
+            <h6 id='welcome-message-1'>~</h6>
+            <h6 id='welcome-message-2'>~</h6>
+            <h6 id='welcome-message-3'>~</h6>
+            <h6 id='welcome-message-4'>~</h6>
+            <button type="button" id="more">./more</button>
+        </div>
 
+        <main class="container" id="main" style="opacity: 0;">
+            <div id="skills">
+                <h6>self.skills = {</h6><br>
+                <h6><span style="float: left;">⠀⠀⠀python: ⠀⠀⠀⠀⠀ </span> <span class="box-progress"></span></h6><br>
+                <h6><span style="float: left;">⠀⠀⠀jScript:⠀⠀⠀⠀⠀</span> <span class="box-progress"></span></h6><br>
+                <h6><span style="float: left;">⠀⠀⠀HTMLCSS:⠀⠀⠀⠀⠀ </span> <span class="box-progress"></span></h6><br>
+                <h6><span style="float: left;">⠀⠀⠀c#-unity:⠀⠀⠀⠀</span> <span class="box-progress"></span></h6><br>
+                <h6><span style="float: left;">⠀⠀⠀java:⠀⠀⠀⠀⠀⠀⠀⠀</span> <span class="box-progress"></span></h6><br><br>
+                <h6>}</h6>
+            </div>
+            <br>
+            <div id="other-skills">
+                <h6>self.otherSkills = [</h6><br>
+                <h6>⠀⠀⠀Blockchain Technology,</h6>
+                <h6>⠀⠀⠀Physics=[Kinematics,Mechanics,Dynamics],</h6>
+                <h6>⠀⠀⠀Mathematics=[Geometry, Calculus],</h6>
+                <h6>⠀⠀⠀Music=[Guitar, Singing],</h6>
+                <h6>⠀⠀⠀Sports=[Badminton]</h6><br>
+                <h6>]</h6>
+            </div>
+        </main>
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -22,6 +49,7 @@
             crossorigin="anonymous"></script>
 
         <script src="index.js"></script>
+        <script src="jquery-3.5.1.min.js"></script>
     </body>
 
 </html>

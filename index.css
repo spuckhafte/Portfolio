@@ -1,0 +1,52 @@
+:root {
+    --code-green: #39ff14
+}
+
+::placeholder {
+    color: #37ff1481;
+    opacity: 1;
+  }
+  :-ms-input-placeholder {
+    color: #37ff1481
+  }
+  ::-ms-input-placeholder {
+    color: #37ff1481;
+  }
+
+body {
+    padding: 5px;
+    background-color: black;
+    font-family: 'Courier New', monospace;
+    color: var(--code-green);
+}
+
+#welcome {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    cursor: normal;
+}
+
+#more {
+    opacity: 0;
+    background-color: rgb(20, 20, 20);
+    color: var(--code-green);
+    border: none;
+}
+
+#main {
+    padding-top: 20px;
+}
+
+#skills {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.box-progress {
+    box-sizing: border-box;
+    width: 200px;
+    border: 0.5px solid var(--code-green);
+    float: left;
+}
