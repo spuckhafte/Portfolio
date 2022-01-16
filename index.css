@@ -1,5 +1,13 @@
 :root {
-    --code-green: #39ff14
+    --code-black: #0C1021;
+    --code-green: #39ff14;
+    --code-orange: #FF6400;
+    --code-yellow: #e9c062;
+    /* --code-b: #2e3436; */
+}
+
+brk {
+  color: var(--code-green);
 }
 
 ::placeholder {
@@ -15,7 +23,7 @@
 
 body {
     padding: 5px;
-    background-color: black;
+    background-color: var(--code-black);
     font-family: 'Courier New', monospace;
     color: var(--code-green);
 }
@@ -44,10 +52,22 @@ body {
     -webkit-user-select: none;
 }
 
+#skills-content {
+  color: var(--code-yellow);
+}
+
+#otherSkills-content {
+  color: var(--code-orange);
+}
+
+#projects-content {
+  color: var(--code-yellow);
+}
+
 .box-progress {
     box-sizing: border-box;
     width: 200px;
-    border: 0.5px solid var(--code-green);
+    border: 0.5px solid var(--code-orange);
     float: left;
 }
 
@@ -66,3 +86,10 @@ body {
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+
+#duYourThing{
+  position: relative;
+  left: 60px;
+  padding: 10px;
+  border: thin solid var(--code-green);
+}

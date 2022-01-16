@@ -12,7 +12,7 @@ let welcome_text_4_elem = document.getElementById('welcome-message-4'); let welc
 window.onload = () => {
     setTimeout(() => {
         runWelcome()
-    }, 500)
+    }, 10)
 }
 
 function runWelcome() {
