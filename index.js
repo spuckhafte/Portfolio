@@ -1,8 +1,7 @@
 let main_elem = document.getElementById('main')
 let more = document.getElementById('more')
 let skills = document.getElementById('skills')
-let body = document.getElementsByTagName('body')
-let html = document.getElementsByTagName('html')
+let body = document.body
 
 let welcome_text_1_elem = document.getElementById('welcome-message-1'); let welcome_text_1 = 'Person:  '
 let welcome_text_2_elem = document.getElementById('welcome-message-2'); let welcome_text_2 = '⠀⠀initialize(self):'
@@ -10,6 +9,7 @@ let welcome_text_3_elem = document.getElementById('welcome-message-3'); let welc
 let welcome_text_4_elem = document.getElementById('welcome-message-4'); let welcome_text_4 = '⠀⠀⠀⠀self.age = 17'
 
 window.onload = () => {
+    body.style.overflow = 'hidden'
     setTimeout(() => {
         runWelcome()
     }, 10)
@@ -47,20 +47,23 @@ function typing_animation(elem, text, interval, end, input, type) {
 more.onclick = function () {
     if (more.innerHTML == './more') {
         more.innerHTML = './less'
-        body.overflow = 'auto'
         main_elem.style.opacity = 1;
         main_elem.style.transition = '0.1s ease-in'
+        body.style.overflow = 'visible'
         animate_skill()
     } else {
         more.innerHTML = './more'
-        body.overflow = 'hidden'
         main_elem.style.opacity = 0;
         main_elem.style.transition = '0.1s ease-in'
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        body.style.overflow = 'hidden'
     }
 }
 
 function animate_skill() {
-    const skills = [15, 14, 15, 12, 11, 4]
+    // py, react, js, htm/css, c#, java
+    const skills = [15, 9, 14, 12, 11, 4]
 
     const langs = document.getElementsByClassName('box-progress')
     var i

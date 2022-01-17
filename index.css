@@ -3,7 +3,11 @@
     --code-green: #39ff14;
     --code-orange: #FF6400;
     --code-yellow: #e9c062;
-    /* --code-b: #2e3436; */
+    --code-gray: #5a6569;
+}
+
+cmnt {
+  color: var(--code-gray);
 }
 
 brk {
@@ -26,6 +30,7 @@ body {
     background-color: var(--code-black);
     font-family: 'Courier New', monospace;
     color: var(--code-green);
+    /* overflow: hidden; */
 }
 
 #welcome {
@@ -87,7 +92,7 @@ body {
     background: #555;
   }
 
-#duYourThing{
+#project{
   position: relative;
   left: 60px;
   padding: 10px;
