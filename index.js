@@ -7,6 +7,7 @@ let welcome_text_1_elem = document.getElementById('welcome-message-1'); let welc
 let welcome_text_2_elem = document.getElementById('welcome-message-2'); let welcome_text_2 = '⠀⠀initialize(self):'
 let welcome_text_3_elem = document.getElementById('welcome-message-3'); let welcome_text_3 = '⠀⠀⠀⠀self.name = Rakshit'
 let welcome_text_4_elem = document.getElementById('welcome-message-4'); let welcome_text_4 = '⠀⠀⠀⠀self.age = 17'
+let welcome_text_5_elem = document.getElementById('welcome-message-5'); let welcome_text_5 = '⠀⠀⠀⠀self.status = student'
 
 window.onload = () => {
     body.style.overflow = 'hidden'
@@ -18,9 +19,10 @@ window.onload = () => {
 function runWelcome() {
     var count;
     count += typing_animation(welcome_text_1_elem, welcome_text_1, 50, false, more, 'welcomeAnimation')
-    count += typing_animation(welcome_text_2_elem, welcome_text_2, 50, false, more)
-    count += typing_animation(welcome_text_3_elem, welcome_text_3, 50, false, more)
-    count += typing_animation(welcome_text_4_elem, welcome_text_4, 50, true, more)
+    count += typing_animation(welcome_text_2_elem, welcome_text_2, 50, false, more, 'welcomeAnimation')
+    count += typing_animation(welcome_text_3_elem, welcome_text_3, 50, false, more, 'welcomeAnimation')
+    count += typing_animation(welcome_text_4_elem, welcome_text_4, 50, false, more, 'welcomeAnimation')
+    count += typing_animation(welcome_text_5_elem, welcome_text_5, 50, true, more, 'welcomeAnimation')
 
     return count;
 }

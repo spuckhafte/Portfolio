@@ -1,12 +1,12 @@
 :root {
     --code-black: #0C1021;
     --code-green: #39ff14;
-    --code-orange: #FF6400;
+    --code-pink: #af04a6;
     --code-yellow: #e9c062;
     --code-gray: #5a6569;
 }
 
-cmnt {
+cmnt, kbd {
   color: var(--code-gray);
 }
 
@@ -62,17 +62,17 @@ body {
 }
 
 #otherSkills-content {
-  color: var(--code-orange);
+  color: var(--code-pink);
 }
 
-#projects-content {
+#projects-content, #contacts {
   color: var(--code-yellow);
 }
 
 .box-progress {
     box-sizing: border-box;
     width: 200px;
-    border: 0.5px solid var(--code-orange);
+    border: 0.5px solid var(--code-green);
     float: left;
 }
 
