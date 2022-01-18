@@ -10,6 +10,8 @@ let welcome_text_4_elem = document.getElementById('welcome-message-4'); let welc
 let welcome_text_5_elem = document.getElementById('welcome-message-5'); let welcome_text_5 = '⠀⠀⠀⠀self.status = student'
 
 window.onload = () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     body.style.overflow = 'hidden'
     setTimeout(() => {
         runWelcome()
