@@ -1,2 +1,2 @@
 # Portfolio
-This is a portfolio of my work to showcase my potential 
+This is a portfolio of my work to showcase my potential (lol)
